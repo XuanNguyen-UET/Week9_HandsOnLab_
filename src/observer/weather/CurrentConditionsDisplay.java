@@ -1,9 +1,11 @@
 package observer.weather;
 
+import java.util.Observable;
+
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
     private float temperature;
     private float humidity;
-    private WeatherData weatherData;
+    WeatherData weatherData;
 
     public CurrentConditionsDisplay(WeatherData weatherData) {
         this.weatherData = weatherData;
